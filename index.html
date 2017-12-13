@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Anson Teng</title>
+    <meta name="description" content="Anson Teng Design Portfolio">
+    <link rel="icon" type="images/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/component.css">
+  </head>
+  <body>
+    <div class="wrapper"><!-- Start bg -->
+<!-- 首頁背景影片 -->
+      <video id="bgvideo" poster="image/bg_banner_main_n.jpg" playsinline autoplay muted loop>
+        <source src="movies/homepage_bg.mp4" type="video/mp4">
+      </video><!-- End bg -->
+<!-- Start header -->
+      <header class="header js-header">
+        <div class="container"><a class="logo" href="index.html"><img src="image/icon_tital_logo_n.png">
+            <div class="logotype"><span class="logotypeA">ANSON</span><span class="logotypeB">TENG</span></div></a>
+          <div class="nav navbar__nav"><a class="menu-toggle" href="#popup-overlay"><span></span><span></span><span></span></a>
+            <div class="popup-menu" id="popup-overlay">
+              <div class="container">
+                <div class="u-clearfix"><a class="popup-menu__close" href="#"><span></span><span></span></a></div>
+                <ul>
+                  <li><a class="popup-menu__item" href="#about">關於我</a></li>
+                  <li><a class="popup-menu__item" href="#skills">工作項目</a></li>
+                  <li><a class="popup-menu__item" href="#experience">經歷</a></li>
+                  <li><a class="popup-menu__item" href="#works">作品</a></li>
+                  <li><a class="popup-menu__item" href="#contact">聯絡</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header><!-- End header -->	
+<!-- Start main -->
+      <section class="main"><!-- Start about -->
+        <div class="hero wow bounceInLeft">
+          <div class="hero__bg"></div>
+          <div class="container">
+            <div class="hero__content wow bounceInLeft">
+              <h4 class="hero__heading">用設計向世界打聲招呼</h4>
+              <div class="hero__btn"><a class="btn btn--primary btn--md" href="#contact">Contact</a></div>
+            </div>
+          </div>
+        </div><!-- End about -->
+<!-- Start Quote 引述 引文 -->
+        <div class="quote bg-color-white lean-bg--top lean-bg--no-margin" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-push-2">
+                <div class="quote__content">
+                  <div class="quote__icon"></div>
+                  <p class="quote__text">​Hi, 我是 Anson.<br />厚道的左撇子設計工作者<br />擅於結束話題跟專案<br />有一顆不適合在報價時拿出來的良心<br />與一顆適合了解使用者經驗的同理心<br />常在 PU 跑道上、蓮蓬頭下挖掘靈感<br />右腦設計<br />左腦 coding<br />努力成為更專業的斜槓中年</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Quote 引述 引文 -->
+<!-- Start Skill -->
+        <div class="skill bg-color-white lean-bg--bottom" id="skills">
+          <div class="container">
+            <h2 class="subtitle u-text-center wow bounceInUp">工作項目</h2>
+            <div class="skill-group">
+              <!--這邊用2個row是因為：如果都放在同一個row，但4個內容高度不同時，Float會造成跑版。-->
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="skill-card wow bounceInUp" data-wow-delay="0.15s">
+                    <div class="skill-card__inner">
+                      <h4 class="skill-card__title">網頁設計</h4>
+                      <p class="skill-card__text--yellow">網頁美術設計、RWD、切版、微互動。</p>
+                      <p class="skill-card__text">HTML／Pug<br />CSS／Sass<br />JavaScript／jQuery／Bootstrap</p>
+                    </div>
+                    <div class="skill-card__icon"><img class="image" src="image/skill_icon/html-icon.png" alt="HTML5"></div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="skill-card wow bounceInUp" data-wow-delay="0.3s">
+                    <div class="skill-card__inner">
+                      <h4 class="skill-card__title">多媒體互動設計 </h4>
+                      <p class="skill-card__text--yellow">觸控電子看板互動設計。包含企劃、美術、動畫、遊戲設計、程式開發、影像與音效剪輯。</p>
+                      <p class="skill-card__text">Adobe Animate／Action Script 3.0<br />Sony Vegas Pro</p>
+                    </div>
+                    <div class="skill-card__icon"><img class="image" src="image/skill_icon/fl-icon.png" alt="CSS"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="skill-card wow bounceInUp" data-wow-delay="0.45s">
+                    <div class="skill-card__inner">
+                      <h4 class="skill-card__title">視覺設計</h4>
+                      <p class="skill-card__text--yellow">CI 企業識別、品牌規劃、平面設計、商品攝影、影像處理。</p>
+                      <p class="skill-card__text">Illustrator<br />Photoshop<br />Lightroom</p>
+                    </div>
+                    <div class="skill-card__icon"><img class="image" src="image/skill_icon/ai-icon.png" alt="AI"></div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="skill-card wow bounceInUp" data-wow-delay="0.6s">
+                    <div class="skill-card__inner">
+                      <h4 class="skill-card__title">UI 設計</h4>
+                      <p class="skill-card__text--yellow">從 UI flow 到 Prototype 進而完成整體設計規範</p>
+                      <p class="skill-card__text">Illustrator<br />Sketch</p>
+                    </div>
+                    <div class="skill-card__icon"><img class="image" src="image/skill_icon/sketch-icon.png" alt="SKETCH"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="skill-card wow bounceInUp" data-wow-delay="0.75s">
+                    <div class="skill-card__inner">
+                      <h4 class="skill-card__title">動畫製作</h4>
+                      <p class="skill-card__text--yellow">Motion Graphic、繪製動畫分鏡腳本、角色動態設計、動畫角色設定。</p>
+                      <p class="skill-card__text">Adobe Animate</p>
+                    </div>
+                    <div class="skill-card__icon"><img class="image" src="image/skill_icon/an-icon.png" alt="HTML5"></div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="skill-card">
+                    <div class="skill-card__inner--space"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Skill -->
+<!-- Start Experience -->
+        <div class="experience" id="experience">
+          <div class="container">
+            <h2 class="subtitle u-text-center color-white wow bounceInUp">經歷</h2>
+            <div class="timeline-group">
+              <div class="timeline"></div>
+              <div class="timeline-cards">
+                <div class="timeline-cards__row">
+                  <div class="timeline-card wow bounceInUp">
+                    <div class="timeline-card__title">來宇科技</div>
+                    <div class="timeline-card__time">2010/3 ~ </div>
+                    <div class="timeline-card__text">客製化多媒體觸控互動電視。負責專案企劃、美術設計、程式設計。另負責日商 BUFFALO 台灣區美術總監，規劃品牌形象與行銷內容。</div>
+                  </div>
+                </div>
+                <div class="timeline-cards__row">
+                  <div class="timeline-card wow bounceInUp">
+                    <div class="timeline-card__title">頑石創意</div>
+                    <div class="timeline-card__time">2007/6 ~ 2010/3</div>
+                    <div class="timeline-card__text">動畫短片與網頁動畫設計、製作、導演。專案內容多與歷史、藝術、自然科學、教育有關的角色動畫設計與動畫影片。</div>
+                  </div>
+                </div>
+                <div class="timeline-cards__row">
+                  <div class="timeline-card wow bounceInUp">
+                    <div class="timeline-card__title">衛肯創意</div>
+                    <div class="timeline-card__time">2006/12 ~ 2007/5</div>
+                    <div class="timeline-card__text">負責數間企業官方網站設計與形象動畫製作，以及澳門政府單位多媒體光碟遊戲美術設計。</div>
+                  </div>
+                </div>
+                <div class="timeline-cards__row">
+                  <div class="timeline-card wow bounceInUp">
+                    <div class="timeline-card__title">門得揚科技</div>
+                    <div class="timeline-card__time">2001/11 ~ 2006/11</div>
+                    <div class="timeline-card__text">動畫設計、腳本繪製、廣告影片製作。多媒體教材內容設計、規劃。製程管理與進度控管。外包人員洽談、訓練。</div>
+                  </div>
+                </div>
+                <div class="timeline-cards__row">
+                  <div class="timeline-card wow bounceInUp">
+                    <div class="timeline-card__title">小哈佛電腦美語</div>
+                    <div class="timeline-card__time">1999/7 ~ 1999/12</div>
+                    <div class="timeline-card__text">多媒體互動光碟教材：美術設計、動畫設計、Lingo程式開發。</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Experience -->
+<!-- Start work -->
+        <div class="work bg-color-white lean-bg--top lean-bg--bottom" id="works">
+          <div class="container">
+            <h2 class="subtitle u-text-center wow bounceInUp">作品</h2>
+            <div class="work-list">
+              <div class="work-item wow fadeInUp">
+                <div class="row">
+                  <div class="col-sm-6 col-sm-push-5">
+                    <div class="imgbox"><a href="works_adelaide_cafe.html">
+                        <div class="imgbox__inner imgbox__inner--4-3">
+                          <div class="image" style="background-image:url('image/works/img_works-menu_adelaide_n.jpg');"></div>
+                        </div></a></div>
+                  </div>
+                  <div class="col-sm-4 col-sm-pull-5">
+                    <div class="work-item__text work-item__text--right">
+                      <h3 class="work-item__title work-item__title--right">阿德雷得咖啡<br />Adelaide Cafe</h3>
+                      <p class="work-item__intro">品牌規畫<br />CI 識別設計</p><a class="text-btn text-btn--primary text-btn--lg" href="works_adelaide_cafe.html">Show project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="work-item wow fadeInUp">
+                <div class="row">
+                  <div class="col-sm-6 col-sm-push-1">
+                    <div class="imgbox"><a href="works_buffalo.html">
+                        <div class="imgbox__inner imgbox__inner--4-3">
+                          <div class="image" style="background-image:url('image/works/img_works-menu_buffalo-mascot_n.jpg');"></div>
+                        </div></a></div>
+                  </div>
+                  <div class="col-sm-4 col-sm-push-1">
+                    <div class="work-item__text">
+                      <h3 class="work-item__title work-item__title--left">日商 BUFFLO 台灣<br />品牌行銷設計</h3>
+                      <p class="work-item__intro">視覺設計<br />行銷活動<br />形象動畫製作</p><a class="text-btn text-btn--primary text-btn--lg" href="works_buffalo.html">Show project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="work-item wow fadeInUp">
+                <div class="row">
+                  <div class="col-sm-6 col-sm-push-6">
+                    <div class="imgbox"><a href="works_ww-bag.html">
+                        <div class="imgbox__inner imgbox__inner--4-3">
+                          <div class="image" style="background-image:url('image/works/img_works-menu_ww-bag_n.jpg');"></div>
+                        </div></a></div>
+                  </div>
+                  <div class="col-sm-4 col-sm-pull-5">
+                    <div class="work-item__text">
+                      <h3 class="work-item__title work-item__title--right">WW 輕旅單肩相機包</h3>
+                      <p class="work-item__intro">行銷企劃<br />商品攝影<br />影像處理</p><a class="text-btn text-btn--primary text-btn--lg" href="works_ww-bag.html">Show project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="work-item wow fadeInUp">
+                <div class="row">
+                  <div class="col-sm-6 col-sm-push-1">
+                    <div class="imgbox"><a href="works_doro-cafe.html">
+                        <div class="imgbox__inner imgbox__inner--4-3">
+                          <div class="image" style="background-image:url('image/works/img_works-menu_doro-cafe_n.jpg');"></div>
+                        </div></a></div>
+                  </div>
+                  <div class="col-sm-4 col-sm-push-1">
+                    <div class="work-item__text">
+                      <h3 class="work-item__title">馥宇國際形象網站<br />Piazza D'oro </h3>
+                      <p class="work-item__intro">網頁前端</p><a class="text-btn text-btn--primary text-btn--lg" href="works_doro-cafe.html">Show project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="work-item wow fadeInUp">
+                <div class="row">
+                  <div class="col-sm-6 col-sm-push-5">
+                    <div class="imgbox"><a href="works_rapoo.html">
+                        <div class="imgbox__inner imgbox__inner--4-3">
+                          <div class="image" style="background-image:url('image/works/img_works-menu_rapoo_n.jpg');"></div>
+                        </div></a></div>
+                  </div>
+                  <div class="col-sm-4 col-sm-pull-5">
+                    <div class="work-item__text work-item__text--right">
+                      <h3 class="work-item__title work-item__title--right">RAPOO<br />雷柏台灣</h3>
+                      <p class="work-item__intro">視覺設計<br />網通行銷<br />活動攝影</p><a class="text-btn text-btn--primary text-btn--lg" href="works_rapoo.html">Show project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="work-item wow fadeInUp">
+                <div class="row">
+                  <div class="col-sm-6 col-sm-push-1">
+                    <div class="imgbox"><a href="works_jyt.html">
+                        <div class="imgbox__inner imgbox__inner--4-3">
+                          <div class="image" style="background-image:url('image/works/img_works-menu_jyt_n.jpg');"></div>
+                        </div></a></div>
+                  </div>
+                  <div class="col-sm-4 col-sm-push-1">
+                    <div class="work-item__text">
+                      <h3 class="work-item__title work-item__title--left">金玉堂官方網站<br />JIN YUH TARNG</h3>
+                      <p class="work-item__intro">網頁美術<br />網頁切版</p><a class="text-btn text-btn--primary text-btn--lg" href="works_jyt.html">Show project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End work -->
+<!-- Start contact -->
+        <div class="contact" id="contact">
+          <div class="container">
+            <h2 class="subtitle u-text-center color-white">聯絡方式</h2>
+            <div class="divide-text wow fadeInUp">一起合作吧！</div>
+            <div class="info">
+              <div class="info__email wow fadeInUp"><a href="mailTo:asabluegg@gmail.com">asabluegg@gmail.com</a></div>
+              <div class="info__phone wow fadeInUp"><a href="tel:0920087990">0920087990</a></div>
+            </div>
+          </div>
+        </div><!-- End contact -->
+      </section><!-- End main -->
+<!-- Start footer -->
+      <footer class="footer">
+        <div class="container">
+          <p class="final-text">若您有任何合作或交流需求，請以Email方式，收到後將會儘快與您聯繫。<br />或直接以電話聯絡，感謝您。</p>
+          <p class="copyright">© 2017 Anson Teng Design Portfolio</p>
+        </div>
+      </footer><!-- End footer -->		
+    </div><!-- JS -->
+    <script src="js/jquery-2.0.2.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
