@@ -1,0 +1,93 @@
+doctype html
+html(lang="zh-TW")
+    head
+        //- 為文件設定字符編碼
+        meta(charset="UTF-8")
+        //- 教導 Internet Explorer 使用最新的渲染引擎
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        //- Viewport 用在響應式網頁設計
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0')
+
+        //- 檔案標題
+        title Anson Teng
+
+        //- 網頁敘述 Meta Description 
+        meta(name="description" content="Anson Teng Design Portfolio")
+
+        //- Icon
+        link(rel='icon' type='images/x-icon' href='favicon.png')
+
+        //- CSS
+        link(rel='stylesheet' href='css/base.css')
+        link(rel='stylesheet' href='css/layout.css')
+        link(rel='stylesheet' href='css/component.css')
+
+
+    body
+        .wrapper
+            //- 主選單
+            <!-- Start header -->
+            header.header.js-header
+                .container
+                    a.logo(href='index.html')
+                        img(src="image/icon_tital_logo_n.png")
+                        .logotype
+                            span.logotypeA ANSON
+                            span.logotypeB TENG
+                    .nav.navbar__nav
+                        a(href='#popup-overlay').menu-toggle
+                            span
+                            span
+                            span
+                        #popup-overlay.popup-menu
+                            .container
+                                .u-clearfix
+                                    a(href="#").popup-menu__close
+                                        span
+                                        span
+                                ul
+                                    li
+                                        a.popup-menu__item(href="index.html#about") 關於我
+                                    li
+                                        a.popup-menu__item(href="index.html#skills") 工作項目
+                                    li
+                                        a.popup-menu__item(href="index.html#experience") 經歷
+                                    li
+                                        a.popup-menu__item(href="index.html#works") 作品
+                                    li
+                                        a.popup-menu__item(href="index.html#contact") 聯絡
+            <!-- End header --> 
+
+            //- 專案內容
+            #content
+                .project.row
+                    .project__name
+                        h2 JIN YUH TARNG | 金玉堂
+                    .project__content
+                        .project__content__description
+                            p 金玉堂文具批發廣場官方網站
+                            p 全國最大文具連鎖加盟體系，有文具禮品、圖書雜誌、辦公用品、電腦週邊、流行飾品、禮品精品、影音光碟及生活百貨等，滿足您在學校、辦公及生活所有必需用品。
+                            P 
+                                a(href='http://www.jytnet.com.tw/' target='_blank') 金玉堂文具批發廣場
+
+                            ul
+                                li
+                                    img(src="image/icon_tiny_logo_n.png")
+                                    span 網頁前端
+                                li
+                                    img(src="image/icon_tiny_logo_n.png")
+                                    span 網頁設計
+
+                        .project__content__images
+                            ul
+                                li
+                                    img(src="image/works/jyt/img_works_jyt-01_n.jpg" alt="jyt")
+
+
+
+            .copyright__project
+                p © 2023 Anson Teng Design Portfolio
+
+        <!-- JS -->
+        script(src="js/jquery-2.0.2.min.js")
+        script(src="js/custom.js")

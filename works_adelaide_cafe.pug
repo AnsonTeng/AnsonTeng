@@ -1,0 +1,102 @@
+doctype html
+html(lang="zh-TW")
+    head
+        //- 為文件設定字符編碼
+        meta(charset="UTF-8")
+        //- 教導 Internet Explorer 使用最新的渲染引擎
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        //- Viewport 用在響應式網頁設計
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0')
+
+        //- 檔案標題
+        title Anson Teng
+
+        //- 網頁敘述 Meta Description 
+        meta(name="description" content="Anson Teng Design Portfolio")
+
+        //- Icon
+        link(rel='icon' type='images/x-icon' href='favicon.png')
+
+        //- CSS
+        link(rel='stylesheet' href='css/base.css')
+        link(rel='stylesheet' href='css/layout.css')
+        link(rel='stylesheet' href='css/component.css')
+
+
+    body
+        .wrapper
+            //- 主選單
+            <!-- Start header -->
+            header.header.js-header
+                .container
+                    a.logo(href='index.html')
+                        img(src="image/icon_tital_logo_n.png")
+                        .logotype
+                            span.logotypeA ANSON
+                            span.logotypeB TENG
+                    .nav.navbar__nav
+                        a(href='#popup-overlay').menu-toggle
+                            span
+                            span
+                            span
+                        #popup-overlay.popup-menu
+                            .container
+                                .u-clearfix
+                                    a(href="#").popup-menu__close
+                                        span
+                                        span
+                                ul
+                                    li
+                                        a.popup-menu__item(href="index.html#about") 關於我
+                                    li
+                                        a.popup-menu__item(href="index.html#skills") 工作項目
+                                    li
+                                        a.popup-menu__item(href="index.html#experience") 經歷
+                                    li
+                                        a.popup-menu__item(href="index.html#works") 作品
+                                    li
+                                        a.popup-menu__item(href="index.html#contact") 聯絡
+            <!-- End header -->
+
+            //- 專案內容
+            #content
+                .project.row
+                    .project__name
+                        h2 Adelaide Cafe | 阿德雷得咖啡
+                    .project__content
+                        .project__content__description
+                            p Adelaide Cafe 阿德雷得咖啡品牌設計
+                            p Adelaide是南澳(South Australia)的首府，也是店長夫婦在澳洲住了近兩年的地方。之所以沒有選擇雪梨，墨爾本這些大城市居住，只因為兩個很單純的原因：阿德雷得最著名的葡萄酒跟藝術節。
+                            p 但一時間「摩登原始人」般的無趣生活，讓夫妻倆無所適從，甚至痛苦到想買機票打包回家。但有趣的是，半年過去，原本的不習慣卻變成喜愛。速度超慢的網路反而戒斷了手機成癮。帶來的是多出很多時間做些想很久卻遲遲未行動的計畫；夏天日照變長時，可以從事戶外活動或釣魚。六點商店關門則代表不再花錢逛街，反而多了時間可以開始學著做菜並跟朋友分享。
+                            p 因為懷念南澳阿德雷得這個城市的的寬廣、自在與友善，店長夫婦回到台灣經營的第一間咖啡館就取名叫做阿德雷得。除了提醒自己在繁忙的都市生活中仍記住簡單的美好，也希望來店裡的人可以感受那片刻的自在。
+                            P 
+                                a(href='https://www.facebook.com/Adelaidecafe/' target='_blank') 阿德雷得咖啡
+
+                            ul
+                                li
+                                    img(src="image/icon_tiny_logo_n.png")
+                                    span 品牌規劃
+                                li
+                                    img(src="image/icon_tiny_logo_n.png")
+                                    span 商標設計
+
+
+                        .project__content__images
+                            ul
+                                li
+                                    img(src="image/works/adelaide/img_works_adelaide-01_n.png" alt="Adelaide_coffee")
+                                li
+                                    img(src="image/works/adelaide/img_works_adelaide-05_n.jpg" alt="Adelaide_coffee")
+                                li
+                                    img(src="image/works/adelaide/img_works_adelaide-03_n.jpg" alt="Adelaide_coffee")
+                                li
+                                    img(src="image/works/adelaide/img_works_adelaide-02_n.jpg" alt="Adelaide_coffee")    
+                                li
+                                    img(src="image/works/adelaide/img_works_adelaide-04_n.jpg" alt="Adelaide_coffee")   
+
+            .copyright__project
+                p © 2023 Anson Teng Design Portfolio
+
+        <!-- JS -->
+        script(src="js/jquery-2.0.2.min.js")
+        script(src="js/custom.js")

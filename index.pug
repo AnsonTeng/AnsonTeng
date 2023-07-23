@@ -1,0 +1,313 @@
+doctype html
+html(lang="zh-TW")
+	head
+		//- 為文件設定字符編碼
+		meta(charset="UTF-8")
+		//- 教導 Internet Explorer 使用最新的渲染引擎
+		meta(http-equiv="x-ua-compatible" content="ie=edge")
+		//- Viewport 用在響應式網頁設計
+		meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0')
+
+		//- 檔案標題
+		title Anson Teng
+
+		//- 網頁敘述 Meta Description 
+		meta(name="description" content="Anson Teng Design Portfolio")
+
+		//- Icon
+		link(rel='icon' type='images/x-icon' href='favicon.png')
+
+		//- CSS
+		link(rel='stylesheet' href='css/base.css')
+		link(rel='stylesheet' href='css/layout.css')
+		link(rel='stylesheet' href='css/animate.css')
+		link(rel='stylesheet' href='css/jquery.fancybox.css')
+		link(rel='stylesheet' href='css/component.css')
+	body
+		.wrapper
+			<!-- Start bg -->
+			<!-- 首頁背景影片 -->
+			video#bgvideo(poster='image/bg_banner_main_n.jpg', playsinline, autoplay, muted, loop)
+				source(src='movies/homepage_bg.mp4' type='video/mp4')
+
+			<!-- End bg -->
+
+			<!-- Start header -->
+			header.header.js-header
+				.container
+					a.logo(href='index.html')
+						img(src="image/icon_tital_logo_n.png")
+						.logotype
+							span.logotypeA ANSON
+							span.logotypeB TENG
+					.nav.navbar__nav
+						a(href='#popup-overlay').menu-toggle
+							span
+							span
+							span
+						#popup-overlay.popup-menu
+							.container
+								.u-clearfix
+									a(href="#").popup-menu__close
+										span
+										span
+								ul
+									li
+										a.popup-menu__item(href="#about") 關於我
+									li
+										a.popup-menu__item(href="#skills") 工作項目
+									li
+										a.popup-menu__item(href="#experience") 經歷
+									li
+										a.popup-menu__item(href="#works") 作品
+									li
+										a.popup-menu__item(href="#contact") 聯絡
+
+			<!-- End header -->	
+
+			<!-- Start main -->
+			section.main
+				<!-- Start about -->
+				.hero.wow.bounceInLeft
+					.hero__bg
+					.container
+						.hero__content.wow.bounceInLeft
+							h4.hero__heading
+								| 用設計向世界打聲招呼
+							.hero__btn
+								a(href="#contact").btn.btn--primary.btn--md Contact
+				<!-- End about -->
+
+				<!-- Start Quote 引述 引文 -->
+				#about.quote.bg-color-white.lean-bg--top.lean-bg--no-margin
+					.container
+						.row
+							.col-sm-8.col-sm-push-2
+								.quote__content
+									.quote__icon
+										//- i.icon-quote-right
+									p.quote__text ​Hi, 我是 Anson.<br />厚道的左撇子設計工作者<br />擅於結束話題跟專案<br />有一顆不適合在報價時拿出來的良心<br />與一顆適合了解使用者經驗的同理心<br />常在 PU 跑道上、蓮蓬頭下挖掘靈感<br />右腦設計<br />左腦 coding<br />努力成為更專業的斜槓中年
+				<!-- End Quote 引述 引文 -->
+
+				<!-- Start Skill -->
+				#skills.skill.bg-color-white.lean-bg--bottom
+					.container
+						h2.subtitle.u-text-center.wow.bounceInUp 工作項目
+						.skill-group
+							//這邊用2個row是因為：如果都放在同一個row，但4個內容高度不同時，Float會造成跑版。
+							.row
+								.col-sm-6
+									.skill-card.wow.bounceInUp(data-wow-delay="0.15s")
+										.skill-card__inner
+											h4.skill-card__title 網頁設計
+											p.skill-card__text--yellow 網頁美術設計、RWD、切版、微互動。
+											p.skill-card__text HTML／Pug<br />CSS／Sass<br />JavaScript／jQuery／Bootstrap
+										.skill-card__icon
+											img.image(src="image/skill_icon/html-icon.png" alt="HTML5")
+								.col-sm-6
+									.skill-card.wow.bounceInUp(data-wow-delay="0.3s")
+										.skill-card__inner
+											h4.skill-card__title 多媒體互動設計 
+											p.skill-card__text--yellow 觸控電子看板互動設計。包含企劃、美術、動畫、遊戲設計、程式開發、影像與音效剪輯。
+											p.skill-card__text Adobe Animate／Action Script 3.0<br />Sony Vegas Pro
+										.skill-card__icon
+											img.image(src="image/skill_icon/fl-icon.png" alt="CSS")
+							.row
+								.col-sm-6
+									.skill-card.wow.bounceInUp(data-wow-delay="0.45s")
+										.skill-card__inner
+											h4.skill-card__title 視覺設計
+											p.skill-card__text--yellow CI 企業識別、品牌規劃、平面設計、商品攝影、影像處理。
+											p.skill-card__text Illustrator<br />Photoshop<br />Lightroom
+										.skill-card__icon
+											img.image(src="image/skill_icon/ai-icon.png" alt="AI")
+								.col-sm-6
+									.skill-card.wow.bounceInUp(data-wow-delay="0.6s")
+										.skill-card__inner
+											h4.skill-card__title UI 設計
+											p.skill-card__text--yellow 從 UI flow 到 Prototype 進而完成整體設計規範
+											p.skill-card__text Figma
+
+										.skill-card__icon
+											img.image(src="image/skill_icon/figma-icon.png" alt="Figma")
+							.row
+								.col-sm-6
+									.skill-card.wow.bounceInUp(data-wow-delay="0.75s")
+										.skill-card__inner
+											h4.skill-card__title 動畫製作
+											p.skill-card__text--yellow Motion Graphic、繪製動畫分鏡腳本、角色動態設計、動畫角色設定。
+											p.skill-card__text Adobe Animate
+										.skill-card__icon
+											img.image(src="image/skill_icon/an-icon.png" alt="HTML5")
+								.col-sm-6
+									.skill-card
+										.skill-card__inner--space
+				<!-- End Skill -->
+
+				<!-- Start Experience -->
+				#experience.experience
+					.container
+						h2.subtitle.u-text-center.color-white.wow.bounceInUp 經歷
+						.timeline-group
+							.timeline
+							.timeline-cards
+								.timeline-cards__row
+									.timeline-card.wow.bounceInUp
+										.timeline-card__title PChome 網路家庭
+										.timeline-card__time 2018/2 ~ 迄今（5.5年）
+										.timeline-card__text 負責設計和開發具有優秀用戶體驗的響應式購物網站。創作商品視覺設計、建立品牌形象，包括數位、平面宣傳輔銷物。
+								.timeline-cards__row
+									.timeline-card.wow.bounceInUp
+										.timeline-card__title 來宇科技
+										.timeline-card__time 2010/3 ~ 2018/2（8年）
+										.timeline-card__text 客製化多媒體觸控互動電視。負責專案企劃、美術設計、程式設計。另負責日商 BUFFALO 台灣區美術總監，規劃品牌形象與行銷內容。
+								.timeline-cards__row
+									.timeline-card.wow.bounceInUp
+										.timeline-card__title 頑石創意
+										.timeline-card__time 2007/6 ~ 2010/3（2.75年）
+										.timeline-card__text 動畫短片與網頁動畫設計、製作、導演。專案內容多與歷史、藝術、自然科學、教育有關的角色動畫設計與動畫影片。
+								.timeline-cards__row
+									.timeline-card.wow.bounceInUp
+										.timeline-card__title 衛肯創意
+										.timeline-card__time 2006/12 ~ 2007/5（0.5年）
+										.timeline-card__text 負責數間企業官方網站設計與形象動畫製作，以及澳門政府單位多媒體光碟遊戲美術設計。
+								.timeline-cards__row
+									.timeline-card.wow.bounceInUp
+										.timeline-card__title 門得揚科技
+										.timeline-card__time 2001/11 ~ 2006/11（5年）
+										.timeline-card__text 動畫設計、腳本繪製、廣告影片製作。多媒體教材內容設計、規劃。製程管理與進度控管。外包人員洽談、訓練。
+								.timeline-cards__row
+									.timeline-card.wow.bounceInUp
+										.timeline-card__title 小哈佛電腦美語
+										.timeline-card__time 1999/7 ~ 1999/12 （0.5年）
+										.timeline-card__text 多媒體互動光碟教材：美術設計、動畫設計、Lingo程式開發。
+				<!-- End Experience -->
+
+				<!-- Start work -->
+				#works.work.bg-color-white.lean-bg--top.lean-bg--bottom
+					.container
+						h2.subtitle.u-text-center.wow.bounceInUp 作品
+						.work-list
+							.work-item.wow.fadeInUp
+								.row
+									.col-sm-6.col-sm-push-1
+										.imgbox
+											a(href='works_k12.html')
+												.imgbox__inner.imgbox__inner--4-3
+													.image(style="background-image:url('image/works/img_works-menu_k12_n.jpg')")
+									.col-sm-4.col-sm-push-1
+										.work-item__text
+											h3.work-item__title.work-item__title--right 國教署<br />官方網站
+											p.work-item__intro 網頁設計<br />UI設計
+											a(href='works_k12.html').text-btn.text-btn--primary.text-btn--lg Show project
+
+							.work-item.wow.fadeInUp
+								.row
+									.col-sm-6.col-sm-push-5
+										.imgbox
+											a(href='works_adelaide_cafe.html')
+												.imgbox__inner.imgbox__inner--4-3
+													.image(style="background-image:url('image/works/img_works-menu_adelaide_n.jpg')")
+									.col-sm-4.col-sm-pull-5
+										.work-item__text.work-item__text--right
+											h3.work-item__title.work-item__title--left 阿德雷得咖啡<br />Adelaide Cafe
+											p.work-item__intro 品牌規畫<br />CI 識別設計
+											a(href='works_adelaide_cafe.html').text-btn.text-btn--primary.text-btn--lg Show project
+							.work-item.wow.fadeInUp
+								.row
+									.col-sm-6.col-sm-push-1
+										.imgbox
+											a(href='works_buffalo.html')
+												.imgbox__inner.imgbox__inner--4-3
+													.image(style="background-image:url('image/works/img_works-menu_buffalo-costco_n.jpg')")
+									.col-sm-4.col-sm-push-1
+										.work-item__text
+											h3.work-item__title.work-item__title--right 日商 BUFFLO 台灣<br />品牌行銷設計
+											p.work-item__intro 視覺設計<br />行銷活動<br />形象動畫製作
+											a(href='works_buffalo.html').text-btn.text-btn--primary.text-btn--lg Show project
+							.work-item.wow.fadeInUp
+								.row
+									.col-sm-6.col-sm-push-6
+										.imgbox
+											a(href='works_ww-bag.html')
+												.imgbox__inner.imgbox__inner--4-3
+													.image(style="background-image:url('image/works/img_works-menu_ww-bag_n.jpg')")
+									.col-sm-4.col-sm-pull-5
+										.work-item__text
+											h3.work-item__title.work-item__title--right WW 輕旅單肩相機包
+											p.work-item__intro 行銷企劃<br />商品攝影<br />影像處理
+											a(href='works_ww-bag.html').text-btn.text-btn--primary.text-btn--lg Show project
+							.work-item.wow.fadeInUp
+								.row
+									.col-sm-6.col-sm-push-1
+										.imgbox
+											a(href='works_doro-cafe.html')
+												.imgbox__inner.imgbox__inner--4-3
+													.image(style="background-image:url('image/works/img_works-menu_doro-cafe_n.jpg')")
+									.col-sm-4.col-sm-push-1
+										.work-item__text
+											h3.work-item__title 馥宇國際形象網站<br />Piazza D'oro 
+											p.work-item__intro 網頁前端
+											a(href='works_doro-cafe.html').text-btn.text-btn--primary.text-btn--lg Show project
+							.work-item.wow.fadeInUp
+								.row
+									.col-sm-6.col-sm-push-5
+										.imgbox
+											a(href='works_rapoo.html')
+												.imgbox__inner.imgbox__inner--4-3
+													.image(style="background-image:url('image/works/img_works-menu_rapoo_n.jpg')")
+									.col-sm-4.col-sm-pull-5
+										.work-item__text.work-item__text--right
+											h3.work-item__title.work-item__title--right RAPOO<br />雷柏台灣
+											p.work-item__intro 視覺設計<br />網通行銷<br />活動攝影
+											a(href='works_rapoo.html').text-btn.text-btn--primary.text-btn--lg Show project
+							.work-item.wow.fadeInUp
+								.row
+									.col-sm-6.col-sm-push-1
+										.imgbox
+											a(href='works_jyt.html')
+												.imgbox__inner.imgbox__inner--4-3
+													.image(style="background-image:url('image/works/img_works-menu_jyt_n.jpg')")
+									.col-sm-4.col-sm-push-1
+										.work-item__text
+											h3.work-item__title.work-item__title--left 金玉堂官方網站<br />JIN YUH TARNG
+											p.work-item__intro 網頁美術<br />網頁切版
+											a(href='works_jyt.html').text-btn.text-btn--primary.text-btn--lg Show project
+						//- .btn-group.btn-group--center.wow.fadeInUp
+						//- 	a(href="#").btn.btn--secondary.btn--md More Works
+				<!-- End work -->
+
+				<!-- Start contact -->
+				#contact.contact
+					.container
+						h2.subtitle.u-text-center.color-white 聯絡方式
+						.divide-text.wow.fadeInUp 一起合作吧！
+						.info
+							.info__email.wow.fadeInUp
+								a(href="mailTo:asabluegg@gmail.com") asabluegg@gmail.com
+							.info__phone.wow.fadeInUp
+								a(href="tel:0920087990") 0920087990
+							//- .social-bar.info__social-bar
+								a(href='#').icon-btn.wow.fadeInUp(data-wow-delay="0.2s")
+									i.icon.icon-twitter
+								a(href='#').icon-btn.wow.fadeInUp(data-wow-delay="0.4s")
+									i.icon.icon-dribbble
+								a(href='#').icon-btn.wow.fadeInUp(data-wow-delay="0.6s")
+									i.icon.icon-facebook-official
+				<!-- End contact -->
+
+			<!-- End main -->
+
+			<!-- Start footer -->
+			footer.footer
+				.container
+					p.final-text 若您有任何合作或交流需求，請以Email方式，收到後將會儘快與您聯繫。<br />或直接以電話聯絡，感謝您。
+					p.copyright © 2023 Anson Teng Design Portfolio
+			<!-- End footer -->		
+		<!-- JS -->
+		script(src="js/jquery-2.0.2.min.js")
+		script(src="js/wow.min.js")
+		script(src="js/jquery.fancybox.min.js")
+		script(src="js/custom.js")
+
+

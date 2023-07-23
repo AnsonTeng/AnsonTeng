@@ -1,0 +1,110 @@
+doctype html
+html(lang="zh-TW")
+    head
+        //- 為文件設定字符編碼
+        meta(charset="UTF-8")
+        //- 教導 Internet Explorer 使用最新的渲染引擎
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        //- Viewport 用在響應式網頁設計
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0')
+
+        //- 檔案標題
+        title Anson Teng
+
+        //- 網頁敘述 Meta Description 
+        meta(name="description" content="Anson Teng Design Portfolio")
+
+        //- Icon
+        link(rel='icon' type='images/x-icon' href='favicon.png')
+
+        //- CSS
+        link(rel='stylesheet' href='css/base.css')
+        link(rel='stylesheet' href='css/layout.css')
+        link(rel='stylesheet' href='css/component.css')
+
+
+    body
+        .wrapper
+            //- 主選單
+            <!-- Start header -->
+            header.header.js-header
+                .container
+                    a.logo(href='index.html')
+                        img(src="image/icon_tital_logo_n.png")
+                        .logotype
+                            span.logotypeA ANSON
+                            span.logotypeB TENG
+                    .nav.navbar__nav
+                        a(href='#popup-overlay').menu-toggle
+                            span
+                            span
+                            span
+                        #popup-overlay.popup-menu
+                            .container
+                                .u-clearfix
+                                    a(href="#").popup-menu__close
+                                        span
+                                        span
+                                ul
+                                    li
+                                        a.popup-menu__item(href="index.html#about") 關於我
+                                    li
+                                        a.popup-menu__item(href="index.html#skills") 工作項目
+                                    li
+                                        a.popup-menu__item(href="index.html#experience") 經歷
+                                    li
+                                        a.popup-menu__item(href="index.html#works") 作品
+                                    li
+                                        a.popup-menu__item(href="index.html#contact") 聯絡
+            <!-- End header --> 
+
+            //- 專案內容
+            #content
+                .project.row
+                    .project__name
+                        h2 WW | 輕旅單肩相機包
+                    .project__content
+                        .project__content__description
+
+                            p 單眼相機加上更替鏡頭的相機收納肩背包。
+                            p 雙拉鍊形式，拿取相機安全迅速不費工。
+                            p 附肩背用背帶，可調整長度。
+                            p 表面布料全面施予撥水加工。
+                            p 內附隔板，可配合相機、鏡頭大小調整位置。
+                            p 背部備有拉練口袋，可收容錢包等物品。
+                            p 包包內部附有收納口袋，適合收納線材等小物品。
+                            p 收納包內側採用絨質布料，溫和保護相機、鏡頭
+                            p
+                                //- 連結
+                                a(href='http://www.etmall.com.tw/WW%E8%BC%95%E6%97%85%E5%96%AE%E8%82%A9%E7%9B%B8%E6%A9%9F%E5%8C%85/i/5811630/' target='_blank') 輕旅單肩相機包
+
+                            ul
+                                li
+                                    img(src="image/icon_tiny_logo_n.png")
+                                    span 視覺設計
+                                li
+                                    img(src="image/icon_tiny_logo_n.png")
+                                    span 商品攝影
+                                li
+                                    img(src="image/icon_tiny_logo_n.png")
+                                    span 企劃文案
+
+                        .project__content__images
+                            ul
+                                li
+                                    img(src="image/works/ww-bag/img_works_ww-bag-01_n.jpg" alt="ww-bag")
+                                li
+                                    img(src="image/works/ww-bag/img_works_ww-bag-02_n.jpg" alt="ww-bag")
+                                li
+                                    img(src="image/works/ww-bag/img_works_ww-bag-03_n.jpg" alt="ww-bag")
+                                li
+                                    img(src="image/works/ww-bag/img_works_ww-bag-04_n.jpg" alt="ww-bag")
+                                li
+                                    img(src="image/works/ww-bag/img_works_ww-bag-05_n.jpg" alt="ww-bag")
+
+            .copyright__project
+                p © 2023 Anson Teng Design Portfolio
+
+        <!-- JS -->
+        script(src="js/jquery-2.0.2.min.js")
+        script(src="js/custom.js")

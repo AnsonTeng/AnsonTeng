@@ -1,0 +1,112 @@
+doctype html
+html(lang="zh-TW")
+    head
+        //- 為文件設定字符編碼
+        meta(charset="UTF-8")
+        //- 教導 Internet Explorer 使用最新的渲染引擎
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        //- Viewport 用在響應式網頁設計
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0')
+
+        //- 檔案標題
+        title Anson Teng
+
+        //- 網頁敘述 Meta Description 
+        meta(name="description" content="Anson Teng Design Portfolio")
+
+        //- Icon
+        link(rel='icon' type='images/x-icon' href='favicon.png')
+
+        //- CSS
+        link(rel='stylesheet' href='css/base.css')
+        link(rel='stylesheet' href='css/layout.css')
+        link(rel='stylesheet' href='css/component.css')
+
+
+    body
+        .wrapper
+            //- 主選單
+            <!-- Start header -->
+            header.header.js-header
+                .container
+                    a.logo(href='index.html')
+                        img(src="image/icon_tital_logo_n.png")
+                        .logotype
+                            span.logotypeA ANSON
+                            span.logotypeB TENG
+                    .nav.navbar__nav
+                        a(href='#popup-overlay').menu-toggle
+                            span
+                            span
+                            span
+                        #popup-overlay.popup-menu
+                            .container
+                                .u-clearfix
+                                    a(href="#").popup-menu__close
+                                        span
+                                        span
+                                ul
+                                    li
+                                        a.popup-menu__item(href="index.html#about") 關於我
+                                    li
+                                        a.popup-menu__item(href="index.html#skills") 工作項目
+                                    li
+                                        a.popup-menu__item(href="index.html#experience") 經歷
+                                    li
+                                        a.popup-menu__item(href="index.html#works") 作品
+                                    li
+                                        a.popup-menu__item(href="index.html#contact") 聯絡
+            <!-- End header --> 
+
+            //- 專案內容
+            #content
+                .project.row
+                    .project__name
+                        h2 RAPOO | 台灣雷柏
+                    .project__content
+                        .project__content__description
+                            p 深圳雷柏科技股份有限公司，無線外設技術專家，致力於向全球用戶提供高性能、高品質的無線外設產品。憑藉一流的工業設計、國際化的品質、本土化的價格，雷柏已連續兩年蟬聯中國無線鍵鼠市場佔有率榜首位,成為領先的無線外設供應商。
+                            p 雷柏無線外設產品，從PC行業拓展到家庭娛樂、移動終端等生活領域，推動了2.4G技術在外設領域的普及，發起了新一代無線通信協議的變革。
+                            p 展望未來，雷柏將持續關注社會公益事業，積極踐行企業公民責任，推動行業標準建設，以提升人類生活品質為己任，構建無線外設更廣闊的未來。
+                            P 以人為本、科技創新、快速回應、合作共贏
+
+                                //- 連結
+                                a(href='https://www.facebook.com/%E5%8F%B0%E7%81%A3%E9%9B%B7%E6%9F%8F-Rapoo-1241415115973887/' target='_blank') 台灣雷柏 RAPOO
+
+                            ul
+                                li
+                                    img(src="image/icon_tiny_logo_n.png")
+                                    span 視覺設計
+                                li
+                                    img(src="image/icon_tiny_logo_n.png")
+                                    span 行銷企劃
+
+
+                        .project__content__images
+                            ul
+                                li
+                                    img(src="image/works/rapoo/img_works_rapoo-01_n.jpg" alt="rapoo")
+                                li
+                                    img(src="image/works/rapoo/img_works_rapoo-02_n.jpg" alt="rapoo")
+                                li
+                                    img(src="image/works/rapoo/img_works_rapoo-05_n.jpg" alt="rapoo")
+                                li
+                                    img(src="image/works/rapoo/img_works_rapoo-06_n.jpg" alt="rapoo")
+                                li
+                                    img(src="image/works/rapoo/img_works_rapoo-07_n.jpg" alt="rapoo")
+                                li
+                                    img(src="image/works/rapoo/img_works_rapoo-08_n.jpg" alt="rapoo")
+                                li
+                                    img(src="image/works/rapoo/img_works_rapoo-09_n.jpg" alt="rapoo")
+                                li
+                                    img(src="image/works/rapoo/img_works_rapoo-10_n.jpg" alt="rapoo")
+                                li
+                                    img(src="image/works/rapoo/rapoo-girl/img_works_rapoo-girl-02_n.jpg" alt="rapoo")
+                                li
+                                    img(src="image/works/rapoo/rapoo-girl/img_works_rapoo-girl-04_n.jpg" alt="rapoo")
+            .copyright__project
+                p © 2023 Anson Teng Design Portfolio
+
+        <!-- JS -->
+        script(src="js/jquery-2.0.2.min.js")
+        script(src="js/custom.js")

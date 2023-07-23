@@ -1,0 +1,117 @@
+doctype html
+html(lang="zh-TW")
+    head
+        //- 為文件設定字符編碼
+        meta(charset="UTF-8")
+        //- 教導 Internet Explorer 使用最新的渲染引擎
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        //- Viewport 用在響應式網頁設計
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0')
+
+        //- 檔案標題
+        title Anson Teng
+
+        //- 網頁敘述 Meta Description 
+        meta(name="description" content="Anson Teng Design Portfolio")
+
+        //- Icon
+        link(rel='icon' type='images/x-icon' href='favicon.png')
+
+        //- CSS
+        link(rel='stylesheet' href='css/base.css')
+        link(rel='stylesheet' href='css/layout.css')
+        link(rel='stylesheet' href='css/component.css')
+
+
+    body
+        .wrapper
+            //- 主選單
+            <!-- Start header -->
+            header.header.js-header
+                .container
+                    a.logo(href='index.html')
+                        img(src="image/icon_tital_logo_n.png")
+                        .logotype
+                            span.logotypeA ANSON
+                            span.logotypeB TENG
+                    .nav.navbar__nav
+                        a(href='#popup-overlay').menu-toggle
+                            span
+                            span
+                            span
+                        #popup-overlay.popup-menu
+                            .container
+                                .u-clearfix
+                                    a(href="#").popup-menu__close
+                                        span
+                                        span
+                                ul
+                                    li
+                                        a.popup-menu__item(href="index.html#about") 關於我
+                                    li
+                                        a.popup-menu__item(href="index.html#skills") 工作項目
+                                    li
+                                        a.popup-menu__item(href="index.html#experience") 經歷
+                                    li
+                                        a.popup-menu__item(href="index.html#works") 作品
+                                    li
+                                        a.popup-menu__item(href="index.html#contact") 聯絡
+            <!-- End header --> 
+
+            //- 專案內容
+            #content
+                .project.row
+                    .project__name
+                        h3 BUFFALO | 巴比祿
+                    .project__content
+                        .project__content__description
+                            p 日商 BUFFALO 台灣巴比祿
+                            p 日商 MELCO 集團成立於1975年，是日本最大的電腦周邊產品供應商，並連續數十年蟬聯日本電腦周邊產品銷量冠軍。 BUFFALO公司在日本、中國、香港、台灣、新加坡、澳大利亞、美國、英國、愛爾蘭等九大地區均設有銷售據點，將BUFFALO品牌之產品銷售世界各地，為全球客戶提供優質服務.
+                            p BUFFALO一直不斷勇於創新，不斷將最新技術應用到新產品上，為家庭和企業提供了先進的網路解決方案。 BUFFALO產品在2010財年銷售額再創佳績，高達12.9億美元。2010年在日本BCN零售市場有16類產品銷量排行第一位，市場佔有率第一；在GFK Japan對消費者進行的品牌滿意度和忠誠度的調查中，BUFFALO有5類產品排名位居前列.
+                            p 1992年，日商 MELCO 集團在台北成立了巴比祿股份有限公司，為其在亞洲的生產、採購、經銷據點。運用各種方法把網路聯繫在一起，為用戶的生活提供實用穩定，安全便利，環保節能的​​數位解決方案，豐富企業、家庭及個人用戶的數位娛樂生活.
+                            P 
+                                //- 連結
+                                a(href='https://www.buffalo.jp/' target='_blank') BUFFALO 官方網站
+                                a(href='https://www.youtube.com/watch?v=cqSd0W5WKBs/' target='_blank') 「BUFFALO NAS 西天取經篇」動畫廣告
+                            ul
+                                li
+                                    img(src="image/icon_tiny_logo_n.png")
+                                    span 品牌規劃
+                                li
+                                    img(src="image/icon_tiny_logo_n.png")
+                                    span 視覺傳達
+                                li
+                                    img(src="image/icon_tiny_logo_n.png")
+                                    span 行銷企劃
+                                li
+                                    img(src="image/icon_tiny_logo_n.png")
+                                    span 設計統籌
+
+
+                        .project__content__images
+                            ul
+                                li
+                                    img(src='image/works/buffalo/img_works_buffalo-01_n.jpg' alt="buffalo")
+                                li
+                                    img(src='image/works/buffalo/img_works_buffalo-07_n.jpg' alt="buffalo")
+                                li
+                                    img(src='image/works/buffalo/spring/img_works_buffalo-spring-01_n.jpg' alt="buffalo")
+                                li
+                                    img(src='image/works/buffalo/costco/img_works_buffalo-costco-02_n.jpg' alt="buffalo")
+                                li
+                                    img(src='image/works/buffalo/mascot/img_works_buffalo-mascot-01_n.jpg' alt="buffalo")
+                                li
+                                    img(src='image/works/buffalo/ap/img_works_buffalo-ap-02_n.jpg' alt="buffalo")
+                                li
+                                    img(src='image/works/buffalo/spring/img_works_buffalo-spring-03_n.jpg' alt="buffalo")
+                                li
+                                    img(src='image/works/buffalo/hdd/img_works_buffalo-hdd-06_n.jpg' alt="buffalo")
+                                li
+                                    img(src='image/works/buffalo/hdd/img_works_buffalo-hdd-08_n.jpg' alt="buffalo")
+
+            .copyright__project
+                p © 2023 Anson Teng Design Portfolio
+
+        <!-- JS -->
+        script(src="js/jquery-2.0.2.min.js")
+        script(src="js/custom.js")
